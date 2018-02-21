@@ -1,0 +1,274 @@
+body {font-family: "Open Sans", sans-serif; font-weight: 300;}
+
+/* CSS adicionado para as barras de progresso*/
+.progress {
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    height: 18px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    border: 1px solid #dedfdf;
+}
+.progress .bar {
+    -moz-box-sizing: border-box;
+    background-color: #0D90D1;
+    background-image: -moz-linear-gradient(center top , #149BDF, #0480BE);
+    background-repeat: repeat-x;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+    color: #FFFFFF;
+    font-size: 12px;
+    height: 18px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    transition: width 0.6s ease 0s;
+    width: 0;
+}
+.progress-striped .bar {
+    background-color: #149BDF;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-size: 40px 40px;
+}
+.progress.active .bar {
+    animation: 2s linear 0s normal none infinite progress-bar-stripes;
+}
+.progress-danger .bar {
+    background-color: #DD514B;
+    background-image: -moz-linear-gradient(center top , #EE5F5B, #C43C35);
+    background-repeat: repeat-x;
+}
+.progress-danger.progress-striped .bar {
+    background-color: #EE5F5B;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+}
+.progress-success .bar {
+    background-color: #5DB95D;
+    background-image: -moz-linear-gradient(center top , #62C462, #57A957);
+    background-repeat: repeat-x;
+}
+.progress-success.progress-striped .bar {
+    background-color: #62C462;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+}
+.progress-info .bar {
+    background-color: #4BB1CF;
+    background-image: -moz-linear-gradient(center top , #5BC0DE, #339BB9);
+    background-repeat: repeat-x;
+}
+.progress-info.progress-striped .bar {
+    background-color: #5BC0DE;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+}
+.progress-warning .bar {
+    background-color: #ffc600;
+    background-image: -moz-linear-gradient(center top , #ffe27e, #deac00);
+    background-repeat: repeat-x;
+}
+.progress-warning.progress-striped .bar {
+    background-color: #FDC695;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+}
+.accordion {
+    margin-bottom: 18px;
+}
+.accordion-group {
+    border: 1px solid #E5E5E5;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 2px;
+}
+.accordion-heading {
+    border-bottom: 0 none;
+}
+.accordion-heading .accordion-toggle {
+    display: block;
+    padding: 8px 15px;
+}
+.accordion-toggle {
+    cursor: pointer;
+}
+.accordion-inner {
+    border-top: 1px solid #E5E5E5;
+    padding: 9px 15px;
+}
+.accordion-group {
+    border: medium none;
+}
+.accordion-group .accordion-heading .btn {
+    color: #404040;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+    text-shadow: none;
+}
+.accordion-group .accordion-body .accordion-inner {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border-color: -moz-use-text-color #DADADA #DADADA;
+    border-radius: 0 0 6px 6px;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    margin: 0 10px 15px;
+}
+
+.slate .slate-content .box-right {
+    margin-left: 0;
+}
+.slate .slate-content .btn {
+    display: block;
+}
+.main {
+    background: none repeat scroll 0 0 #22557A;
+}
+.badge.top {
+    position: static;
+}
+.navbar .input-placeholder {
+    left: 22px;
+    line-height: 30px;
+}
+.footer .left, .footer .right {
+    text-align: center;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    margin: 0;
+}
+.activity-line .label, .activity-line .title, .activity-line .date {
+    margin-bottom: 5px;
+}
+.main-left {
+    border-radius: 0 0 0 0;
+    border-right: 0 none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.sidebar-helper {
+    display: inline;
+}
+.activity-line .label, .activity-line .date, .activity-line .title {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+}
+.navbar .input-placeholder {
+    left: 22px;
+    line-height: 28px;
+}
+.navbar .navbar-search .search-query {
+    margin-bottom: 0;
+    padding: 4px 20px;
+}
+.nav-collapse .dropdown-menu {
+    background: none repeat scroll 0 0 transparent;
+}
+.nav-collapse .dropdown-menu li a:hover {
+    background: none repeat scroll 0 0 #222222;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+.prettyprint.linenums {
+    biox-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset;
+}
+
+a { outline: none !important; }
+
+/* FIM */
+
+
+
+.container { height: 60px;  padding-top: 10px }
+
+.navbar .brand {
+    color: #134D86;
+    font-size: 34px;
+    letter-spacing: -0.05em;
+    text-shadow: 0 0 0 transparent;
+}
+.navbar .nav.pull-right {margin-top: 5px;}
+
+.well {margin: 15px 0;}
+
+li.active b {font-size: 18px; color: #484545;}
+
+li.active b span {display: block; font-size: 12px; font-weight: 300;}
+
+li b span {display: block; font-size: 12px; font-weight: 300;}
+
+li b {color: #fff;}
+
+.titulo_projeto {color: #134D86; font-size: 18px; font-weight: 400;}
+
+.nav-tabs li a {background-color: #134D86; min-height: 45px;}
+
+.nav-tabs li a:hover {background-color: #5e5a5e;}
+
+.copyright {
+    background: none repeat scroll 0 0 #222222;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent; 
+    border-right: 1px solid #134D86; 
+    padding: 10px 10px 10px 10px; 
+    color: #fff; 
+    text-align: center;
+}
+.hr-rodape {margin: 0;}
+.table th {font-weight: 600;}
+.progresso-texto {margin-top: 15px; padding-right: 30px; position: relative;}
+.progresso-texto span {
+	font-size: 12px;
+	left: -40px;
+	line-height: 14px;
+	position: absolute;
+	top: 0;
+    }
+.progresso-texto span.porc_status {
+	font-size: 12px;
+	font-weight: 600;	
+	left: 155px;
+	line-height: 14px;
+	position: absolute;
+	top: 0;
+    }
+.progresso-texto span.porc_status2 {
+    font-size: 12px;
+    font-weight: 600;   
+    left: 0;
+    line-height: 14px;
+    position: absolute;
+    top: 0;
+    }
+.progresso-texto span.status-standby {
+    font-size: 12px;
+    font-weight: 300;
+    left: -190px;
+    line-height: 14px;
+    position: absolute;
+    top: 0;
+    }
+.progresso-texto span.standby {
+    font-size: 10px;
+    font-weight: 600;
+    left: -150px;
+    line-height: 14px;
+    position: absolute;
+    top: -2px;
+}
+table.table {margin-top: 5px !important;}
+.pilares {margin-right: 15px;}
+.inovacao {padding: 1.5px 5px;}
+.progress-warning .bar {background-color: #ffc600;}
+.responsavel-areas {margin: 14px 0 0 10px;}
+.legenda-status {
+    display: block;
+    font-size: 11px;
+    margin: 0 5px 8px;
+    text-align: right;
+    width: 100%;
+}
+.legenda-status div {display: inline; margin-right: 3px;}
+.legenda-status div span.bar {
+    border-radius: 5px 5px 5px 5px;
+    color: #fff;    
+    font-weight: 600;
+    padding: 1px 3px;
+}
+.porc-fase {position: relative; width: 100px;}
+.porc-fase div.progress {height: 10px; margin-bottom: 2px; width: 70px;}
+.porc-fase span {font-size: 11px; font-weight: 400; position:absolute; top:-4px; left:76px;}
+.coluna-status {width: 100px;}
