@@ -1,0 +1,1 @@
+[02-Apr-2018 20:36:26 America/Chicago] PHP Fatal error:  Call to a member function prepare() on null in /home/distr359/public_html/projetos/agendatelefonica/RESTFull/config/db.php on line 29
